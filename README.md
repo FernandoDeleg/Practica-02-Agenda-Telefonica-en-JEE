@@ -33,7 +33,7 @@ Se pide desarrollar una aplicación JEE que permita implementar una agenda telef
 Para lo cual, se propone el siguiente diagrama de clases:
 
  
-
+![diagrama](https://user-images.githubusercontent.com/56567621/118593654-adcacf00-b76d-11eb-9611-238234315e0d.PNG)
  
 
  
