@@ -361,12 +361,9 @@ Por último, tenemos la barra de búsqueda donde tenemos que ingresar la cédula
 
 
 CONCLUSIONES:
-•	Los estudiantes podrán implementar sistemas JEE basado en Servlets, JSP y JDBC.
-RECOMENDACIONES:
-•	Aplicar conceptos de interacción humano máquina para el desarrollo de la GUI.
+Servlets deben proporcionar seguridad basada en formularios que permita a los desarrolladores controlar la apariencia de las pantallas de inicio de sesión. Finalmente, los contenedores de servlets pueden proporcionar autenticación de certificado de cliente y SSL, aunque los contenedores que no cumplen con J2EE no están obligados a hacerlo.
+
+A diferencia de otros aspectos de las aplicaciones web implementadas con JSP y el lenguaje de programación Java, la seguridad generalmente requiere algún código no portátil.
 
 
 
-
-                                                           
-Est.Roberto Pacho							Est.Fernando Deleg
