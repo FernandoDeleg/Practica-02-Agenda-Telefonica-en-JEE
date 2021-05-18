@@ -11,20 +11,6 @@ OBJETIVOS
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 INSTRUCCIONES	
 Se pide desarrollar una aplicación JEE que permita implementar una agenda telefónica en donde se tendrán usuarios con datos como cedula, nombres, apellidos, correo y contraseña. Y cada uno de estos usuarios podrá tener asignado uno o más teléfonos de contacto de diferente tipo y operador, por ejemplo:
 
@@ -38,8 +24,6 @@ Para lo cual, se propone el siguiente diagrama de clases:
 
  
 
-
- 
 Los requerimientos funcionales del sistema son:
 •	Los usuarios pueden registrarse en la aplicación a través de un formulario de creación de cuentas.
 •	Un usuario puede iniciar sesión usando su correo y contraseña.
@@ -68,6 +52,8 @@ ACTIVIDADES POR DESARROLLAR
 
 Creación de los paquetes y clases:
 Como punto de partida empezamos por las clases y el paquete en donde se encuentran es en el ec.edu.ups.modelo.
+ 
+ ![1](https://user-images.githubusercontent.com/56567621/118593873-0e5a0c00-b76e-11eb-8545-0249117602e7.png)
  
 Dentro de la clase Telefono tenemos el siguiente código:
 package ec.edu.ups.modelo;
@@ -234,6 +220,7 @@ public class Usuario implements Serializable{
 Como siguiente se debe realizar la creación de los siguientes paquetes:
 
  
+![2](https://user-images.githubusercontent.com/56567621/118593923-27fb5380-b76e-11eb-8666-3563b187941a.png)
 
 
 Dentro del paquete conexión tenemos la clase en donde vamos a realizar la conexión con la base de datos mysql con el siguiente código:
@@ -308,57 +295,63 @@ public class ContextJDBC {
 
 A continuación, tenemos el paquete ec.edu.ups.DAO que contiene las siguientes clases:
 
+	
+![3](https://user-images.githubusercontent.com/56567621/118594058-64c74a80-b76e-11eb-84d4-99b38a89f3f3.png)
+
+	
+	
  
 En el paquete ec.edu.ups.filtro tenemos una única clase:
  
-
+![4](https://user-images.githubusercontent.com/56567621/118594103-76a8ed80-b76e-11eb-9a94-643f0cc591df.png)
+	
 En el paquete ec.edu.ups.servlets tenemos los siguientes servlets:
 
- 
+![5](https://user-images.githubusercontent.com/56567621/118594394-077fc900-b76f-11eb-8770-ec1d5bab6d50.png)
 
 
 Para la parte de la interfaz se utilizó Bootstrap para tener una interfaz mucho mas interactiva para el usuario:
 
  
-
+![6](https://user-images.githubusercontent.com/56567621/118594405-0b135000-b76f-11eb-92b5-fdbd2f84964f.png)
 
 
 Interfaz de inicio:
 
- 
+![7](https://user-images.githubusercontent.com/56567621/118594416-10709a80-b76f-11eb-994b-db6285369df3.png)
 
 
 Se tiene una pagina de inicio en donde se puede encontrar un poco de información de la aplicación y su uso.
 La parte de Login esta de la siguiente manera:
 
- 
+![8](https://user-images.githubusercontent.com/56567621/118594418-11093100-b76f-11eb-8dcc-b48eb7b19b7d.png)
 
 Como cualquier otro Login se debe tener registrado el correo y la contraseña caso contrario deberá ir al botón de “Registrarme” y llenar el formulario que se muestra a continuación.
 
- 
+![9](https://user-images.githubusercontent.com/56567621/118594420-11093100-b76f-11eb-8424-2c26e3d1fab0.png)
+	
+	
 Al llenar ese formulario los datos se guardarán en la base de datos de MySQL.
-
-
-
-
-
 
 Una vez se tenga registrado podremos acceder mediante nuestro correo y contraseña, dándonos la siguiente interfaz:
 
- 
+![10](https://user-images.githubusercontent.com/56567621/118594421-11a1c780-b76f-11eb-947a-c91f37e9cc48.png)
 
 Como vemos tenemos varias opciones que podemos aplicar como puede ser dar click en el botón “Nuevo Teléfono”, Listar mis Números o ingresamos en la barra de búsqueda ya sea la cédula o el correo de cualquier contacto que exista.
 
 Nuevo Teléfono:
 Esta parte es en donde se van a ingresar los números que posea el usuario, llenando la siguiente interfaz:
  
+![11](https://user-images.githubusercontent.com/56567621/118594422-11a1c780-b76f-11eb-8637-b0759745fbed.png)
+
+	
 Listar mis Números:
 Al dar click en ese botón se van a listar todos los números propios que registramos para ese usuario.
 
 Por último, tenemos la barra de búsqueda donde tenemos que ingresar la cédula o el correo del usuario que queramos saber su número y poder realizar así una llamada o enviar un correo:
 
  
-
+![12](https://user-images.githubusercontent.com/56567621/118594425-11a1c780-b76f-11eb-8557-eee441f8c198.png)
 
 
 
